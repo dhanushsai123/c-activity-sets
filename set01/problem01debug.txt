@@ -1,0 +1,21 @@
+(gdb) r
+Starting program: C:\Users\Boya Shalini\PSC\c-activity-sets\set01/problem01.exe
+[New Thread 11700.0x1640]
+[New Thread 11700.0x2ad8]
+shalini B[Inferior 1 (process 11700) exited normally]
+(gdb) b 4
+Breakpoint 1 at 0x40146e: file C:\Users\Boya Shalini\PSC\c-activity-sets\set01\problem01.c, line 4.
+(gdb) b 5
+Breakpoint 2 at 0x40147a: file C:\Users\Boya Shalini\PSC\c-activity-sets\set01\problem01.c, line 5.
+(gdb) r
+Starting program: C:\Users\Boya Shalini\PSC\c-activity-sets\set01/problem01.exe
+[New Thread 6268.0x439c]
+[New Thread 6268.0x1d78]
+
+Breakpoint 1, main () at C:\Users\Boya Shalini\PSC\c-activity-sets\set01\problem01.c:4
+4           printf("shalini B");
+(gdb) n
+shalini B
+Breakpoint 2, main () at C:\Users\Boya Shalini\PSC\c-activity-sets\set01\problem01.c:5
+5           return 0;
+(gdb) quit
