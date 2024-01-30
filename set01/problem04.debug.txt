@@ -1,0 +1,39 @@
+Starting program: C:\Users\Boya Shalini\c activites set\c-activity-sets\set01/a.exe
+[New Thread 4800.0x1d98]
+[New Thread 4800.0x1254]
+Enter first number: 67
+Enter second number: 20
+The sum of 67 and 20 is: 87
+[Inferior 1 (process 4800) exited normally]
+(gdb) b main
+Breakpoint 1 at 0x40147b: file problem02.c, line 11.
+(gdb) b 4
+Breakpoint 2 at 0x401463: file problem02.c, line 4.
+(gdb) r
+Starting program: C:\Users\Boya Shalini\c activites set\c-activity-sets\set01/a.exe
+[New Thread 8044.0xdbc]
+[New Thread 8044.0x146c]
+
+Breakpoint 1, main () at problem02.c:11
+warning: Source file is more recent than executable.
+11          printf("Enter first number: ");
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+Starting program: C:\Users\Boya Shalini\c activites set\c-activity-sets\set01/a.exe
+[New Thread 10696.0x3be8]
+[New Thread 10696.0x3f44]
+
+Breakpoint 1, main () at problem02.c:11
+11          printf("Enter first number: ");
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) n
+Program not restarted.
+(gdb) quit
+A debugging session is active.
+
+        Inferior 1 [process 10696] will be killed.
+
+Quit anyway? (y or n) y
