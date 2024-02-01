@@ -1,0 +1,18 @@
+gdb) r
+Starting program: C:\Users\Boya Shalini\c activites set\c-activity-sets\set01/a.exe
+[New Thread 16472.0x40d0]
+[New Thread 16472.0x410c]
+Enter a positive integer (n): 5
+The sum of natural numbers up to 5 is 15
+[Inferior 1 (process 16472) exited normally]
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem08.c, line 8.
+(gdb) b 16
+Breakpoint 2 at 0x4014a8: file problem08.c, line 16.
+(gdb) b 22
+Breakpoint 3 at 0x4014d2: file problem08.c, line 22.
+(gdb) b 31
+Breakpoint 4 at 0x4014ff: file problem08.c, line 31.
+(gdb) n
+The program is not being run.
+(gdb) quit
