@@ -1,0 +1,44 @@
+Starting program: C:\Users\Boya Shalini\OneDrive\Desktop\c-activity-sets\set01/a.exe
+[New Thread 8224.0x47c]
+[New Thread 8224.0x794]
+Enter a positive integer (n): 6
+The sum of natural numbers up to 6 is 21
+[Inferior 1 (process 8224) exited normally]
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem08.c, line 8.
+(gdb) b 12
+Breakpoint 2 at 0x401487: file problem08.c, line 12.
+(gdb) r
+Starting program: C:\Users\Boya Shalini\OneDrive\Desktop\c-activity-sets\set01/a.exe
+[New Thread 10152.0x4584]
+[New Thread 10152.0x34a4]
+
+Breakpoint 1, main () at problem08.c:8
+8           n = input_n();
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+Starting program: C:\Users\Boya Shalini\OneDrive\Desktop\c-activity-sets\set01/a.exe 
+[New Thread 17004.0x33d8]
+[New Thread 17004.0x41ac]
+
+Breakpoint 1, main () at problem08.c:8
+8           n = input_n();
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) n
+Program not restarted.
+(gdb) quit
+A debugging session is active.
+
+        Inferior 1 [process 17004] will be killed.
+
+Quit anyway? (y or n) n
+Not confirmed.
+(gdb) quit
+A debugging session is active.
+
+        Inferior 1 [process 17004] will be killed.
+
+Quit anyway? (y or n) y
