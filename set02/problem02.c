@@ -4,6 +4,7 @@ int input_side() {
     int side;
     printf("Enter a side length: ");
     scanf("%d", &side);
+    
     return side;
 }
 
