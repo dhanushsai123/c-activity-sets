@@ -1,0 +1,24 @@
+Starting program: C:\Users\Boya Shalini\OneDrive\Desktop\c-activity-sets\set02/a.exe
+[New Thread 4588.0x30ac]
+[New Thread 4588.0x2da0]
+Enter the base of the triangle: 4
+Enter the height of the triangle: 5
+The area of the triangle with base 4.000000 and height 5.000000 is 10.000000.
+[Inferior 1 (process 4588) exited normally]
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem01.c, line 12.
+(gdb) b 3
+Note: breakpoint 1 also set at pc 0x40146e.
+Breakpoint 2 at 0x40146e: file problem01.c, line 3.
+(gdb) quit
+PS C:\Users\Boya Shalini\OneDrive\Desktop\c-activity-sets\set02> git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.05 KiB | 1.05 MiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/dhanushsai123/c-activity-sets
+   399c7ae..70be0d7  main -> main
+PS C:\Users\Boya Shalini\OneDrive\Desktop\c-activity-sets\set02> 
