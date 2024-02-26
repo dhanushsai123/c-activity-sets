@@ -9,8 +9,8 @@ int main() {
     
     sum = sum_n_nos(n);
 
-    
-    output(n, sum);
+
+        output(n, sum);
     
     return 0;
 }
