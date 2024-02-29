@@ -34,6 +34,7 @@ void compare(int a, int b,int c,int *largest)
     }
 }
    void output(int a, int b, int c,int largest)
+
  {
     printf("largst of %d,%d and %d is %d\n", a, b, c,largest);
 
