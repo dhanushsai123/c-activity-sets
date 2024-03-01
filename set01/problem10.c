@@ -1,48 +1,55 @@
 #include <stdio.h>
 
-struct _complex {
-    float real;
-    float imaginary;
-};
-typedef struct _complex Complex;
-
-Complex input_complex();
-Complex add_complex(Complex a, Complex b);
-void output(Complex a, Complex b, Complex sum);
+void input_two_strings(char *string1, char *string2);
+int stringcompare(char *string1, char *string2);
+void output(char *string1, char *string2, int result);
 
 int main() {
-    Complex num1, num2, result;
+    char str1[100], str2[100];
+    int result;
 
-    printf("Enter the real and imaginary parts of the first complex number:\n");
-    num1 = input_complex();
+    input_two_strings(str1, str2);
 
-    printf("Enter the real and imaginary parts of the second complex number:\n");
-    num2 = input_complex();
+    result = stringcompare(str1, str2);
 
-    result = add_complex(num1, num2);
-
-    output(num1, num2, result);
+    output(str1, str2, result);
 
     return 0;
 }
 
-Complex input_complex() {
-    Complex num;
-    printf("Real part: ");
-    scanf("%f", &num.real);
-    printf("Imaginary part: ");
-    scanf("%f", &num.imaginary);
-    return num;
+void input_two_strings(char *string1, char *string2) {
+    printf("Enter the first string: ");
+    scanf("%s", string1);
+    printf("Enter the second string: ");
+    scanf("%s", string2);
 }
 
-Complex add_complex(Complex a, Complex b) {
-    Complex result;
-    result.real = a.real + b.real;
-    result.imaginary = a.imaginary + b.imaginary;
-    return result;
+int stringcompare(char *string1, char *string2) {
+    int i = 0;
+    
+    while (string1[i] != '\0' && string2[i] != '\0') {
+        if (string1[i] < string2[i]) {
+            return -1; 
+        } else if (string1[i] > string2[i]) {
+            return 1;
+        i++;
+    }
+
+    if (string1[i] == '\0' && string2[i] == '\0') {
+        return 0; 
+    } else if (string1[i] == '\0') {
+        return -1; 
+    } else {
+        return 1;
+    }
 }
 
-void output(Complex a, Complex b, Complex sum) {
-    printf("Sum of (%.1f + %.1fi) and (%.1f + %.1fi) is: %.1f + %.1fi\n", 
-           a.real, a.imaginary, b.real, b.imaginary, sum.real, sum.imaginary);
+void output(char *string1, char *string2, int result) {
+    if (result == 0) {
+        printf("%s is equal to %s\n", string1, string2);
+    } else if (result < 0) {
+        printf("%s is lesser than %s\n", string1, string2);
+    } else {
+        printf("%s is greater than %s\n", string2, string1);
+    }
 }
