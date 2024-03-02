@@ -34,6 +34,7 @@ int stringcompare(char *string1, char *string2) {
             return 1;
         i++;
     }
+    }
 
     if (string1[i] == '\0' && string2[i] == '\0') {
         return 0; 
