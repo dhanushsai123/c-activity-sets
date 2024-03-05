@@ -1,5 +1,85 @@
 #include <stdio.h>
+/*
+  what is a string?
+  string is an array of characters terminated by  '\0'
+*/
 
+int mystrlen(char a[])
+{
+
+  int i=0;
+  while(a[i] != '\0')
+  {
+    i++;
+  }
+  return i;
+}
+
+int main()
+{
+    char a[100] =  "shalini";
+    int len = mystrlen(a);
+    printf("the length of %s is %d",a,mystrlen(a));
+    return 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#if 0
 void input_two_strings(char *string1, char *string2);
 int stringcompare(char *string1, char *string2);
 void output(char *string1, char *string2, int result);
@@ -54,3 +134,5 @@ void output(char *string1, char *string2, int result) {
         printf("%s is greater than %s\n", string2, string1);
     }
 }
+
+#endif
