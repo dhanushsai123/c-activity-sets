@@ -1,42 +1,30 @@
 #include <stdio.h>
-int input();
-void compare(int a, int b, int c,int *largest);
-void output(int a, int b, int c, int largest);
-int main() 
-{
-    int num1, num2, num3, largest;
-    num1 = input();
-    num2 = input();
-    num3 = input();
-    
-    compare(num1, num2, num3, &largest);
-    
-  output(num1, num2, num3, largest);
-    
+
+
+int input_n() {
+    int n;
+    printf("Enter the value of n:");
+    scanf("%d", &n);
+    return n;
+}
+
+
+int sum_n_nos(int n) {
+    int sum = 0;
+    for (int i = 1; i <= n; i++) {
+        sum = i;
+    }
+    return sum;
+}
+
+
+void output(int n, int sum) {
+    printf("The sum of all natural numbers until %d is %d.\n", n, sum);
+}
+
+int main() {
+    int n = input_n();          
+    int sum = sum_n_nos(n);      
+    output(n, sum);                
     return 0;
-}
-int input() 
-{
-    int num;
-    printf("Enter a number: ");
-    scanf("%d", &num);
-    return num;
-}
-void compare(int a, int b,int c,int *largest)
-{
-   *largest = a;
-    if (b > *largest) {
-        *largest = b;
-    }
-    
-    if (c > *largest) {
-        *largest = c;
-    }
-}
-   void output(int a, int b, int c,int largest)
-
- {
-    printf("largst of %d,%d and %d is %d\n", a, b, c,largest);
-
-    output;
 }

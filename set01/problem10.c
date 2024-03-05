@@ -21,9 +21,7 @@ int main()
     int len = mystrlen(a);
     printf("the length of %s is %d",a,mystrlen(a));
     return 0;
-
 }
-
 
 
 
