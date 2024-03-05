@@ -26,7 +26,7 @@ int main() {
 
 Complex input_complex() {
     Complex num;
-    printf("Enter real and imaginary parts separated by space: ");
+    printf("Enter real and imaginary parts separated by space:");
     scanf("%f %f", &num.real, &num.imaginary);
     return num;
 }
@@ -42,3 +42,13 @@ void output(Complex a, Complex b, Complex sum) {
     printf("The sum of %.1f+%.1fi and %.1f+%.1fi is %.1f+%.1fi\n", 
            a.real, a.imaginary, b.real, b.imaginary, sum.real, sum.imaginary);
 }
+
+
+
+
+
+
+
+
+
+
