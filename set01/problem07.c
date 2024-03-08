@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 int input_n(){
   int n;
   printf("Enter the value of n:");
@@ -21,5 +20,4 @@ int main() {
     output(n,sum);
     return 0;
     }
-
 
