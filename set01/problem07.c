@@ -14,10 +14,10 @@ int sum_n_nos(int n) {
     return sum;
 }
 
-int main() {
-    int n =input_n();
-    int sum= sum_n_nos(n);
-    output(n,sum);
+int main()  {
+    int n = input_n();
+    int sum = sum_n_nos(n);
+    output(n, sum);
     return 0;
-    }
+}
 
