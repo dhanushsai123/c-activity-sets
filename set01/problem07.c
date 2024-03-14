@@ -19,4 +19,4 @@ int main()  {
     int sum = sum_n_nos(n);
     output(n, sum);
     return 0;
-} 
+}
